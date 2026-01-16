@@ -80,6 +80,8 @@ The Power BI dashboard provides a consolidated view of:
 ---
 
 ## Project Structure
+
+```text
 la-traffic-accidents-datathon/
 │
 ├── README.md
@@ -102,6 +104,7 @@ la-traffic-accidents-datathon/
 │ └── README.md
 │
 └── .gitignore
+```
 
 ---
 
