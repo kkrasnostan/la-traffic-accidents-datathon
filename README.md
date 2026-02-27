@@ -1,153 +1,198 @@
-# Los Angeles Traffic Accidents Analysis  
-Big Blue Academy Datathon Project (2025)
-
-## Project Overview
-
-This project analyzes traffic accident patterns in Los Angeles using historical accident data from 2016 to 2021.
-
-The objective is to identify temporal, environmental, and behavioral factors that influence accident frequency and severity, and to translate these insights into actionable recommendations for public safety and urban planning.
-
-The analysis combines exploratory data analysis, Power BI dashboarding, and data storytelling, and was developed as part of the Big Blue Academy Datathon.
+# Los Angeles Traffic Accident Intelligence  
+Operational & Urban Risk Analysis Framework  
+Big Blue Academy Datathon | 2025
 
 ---
 
-## Business Objectives
+## Executive Overview
 
-- Reduce traffic accident frequency  
-- Improve public safety outcomes  
-- Support data-driven urban and transportation planning  
+This project analyzes 68,956 traffic accident records (2016–2021) to identify structural risk patterns across time, behavior, and environmental conditions.
 
----
+Rather than descriptive reporting, the objective was to translate historical accident data into decision-support insights for:
 
-## Key Analytical Questions
+- Traffic enforcement targeting
+- Urban infrastructure planning
+- Risk concentration monitoring
+- Public safety optimization
 
-- At which time of day do most accidents occur?  
-- When do the most severe accidents happen (daylight, night, weekday, weekend)?  
-- Do weather conditions affect accident severity?  
-- How has accident volume evolved over time?  
+All modeling and visualization were implemented in Power BI following structured data validation and transformation.
 
 ---
 
-## Tools & Technologies
+## Dataset Scope
 
-- Power BI — data modeling, DAX measures, interactive dashboards  
-- Microsoft Excel — initial data inspection and cleaning  
-- Data visualization and analytical storytelling  
+- 68,956 accident records  
+- March 2016 – December 2021  
+- Source: Los Angeles Police Department (LAPD)  
+- Data cleaned, validated, and modeled for analytical consistency  
 
----
-
-## Dashboard Overview
-
-The Power BI dashboard provides a consolidated view of:
-
-- Total recorded accidents  
-- Average accident severity  
-- Accident trends over time  
-- Distribution by time of day  
-- Weekday vs weekend comparison  
-- Severity patterns by weather conditions  
-- High-risk accident locations  
+Presentation reference:  
+`presentation/datathon_presentation.pdf` :contentReference[oaicite:0]{index=0}
 
 ---
 
-## Key Insights
-
-### Accidents by Time of Day
-
-- The afternoon period accounts for the largest share of accidents (approximately 41%)  
-- Likely associated with peak traffic congestion and commuting hours  
-
-### Weekday vs Weekend
-
-- Approximately 79% of accidents occur on weekdays  
-- Weekend accidents are fewer but tend to show slightly higher average severity  
-
-### Accident Severity by Weather
-
-- Higher average severity is observed during overcast, misty, and rainy conditions  
-- Clear weather does not guarantee lower accident severity  
-
-### Long-Term Accident Trends
-
-- Accident volume shows a sharp increase after 2019  
-- Indicates growing traffic density and infrastructure strain  
-
-### High-Risk Locations
-
-- Major highways and arterial roads dominate accident hotspots  
-- These areas represent key targets for safety interventions  
+# Analytical Highlights
 
 ---
 
-## Project Structure
+## 1️⃣ Long-Term Accident Trend
 
-```text
-la-traffic-accidents-datathon/
-│
-├── README.md
-│
-├── powerbi/
-│ └── la_traffic_accidents_dashboard.pbix
-│
-├── images/
-│ ├── dashboard_overview.png
-│ ├── accidents_by_year.png
-│ ├── accidents_by_time_of_day.png
-│ ├── weekend_vs_weekday.png
-│ ├── severity_by_weather.png
-│ └── top_accident_locations.png
-│
-├── presentation/
-│ └── datathon_presentation.pdf
-│
-├── data/
-│ └── README.md
-│
-└── .gitignore
-```
+![Accidents by Year](images/accidents_by_year.png)
+
+- Accident volume remained relatively stable (2016–2018)
+- Significant structural increase observed from 2019 onward
+- Suggests rising traffic density and infrastructure pressure
+
+This shift marks a structural demand escalation, not seasonal noise.
 
 ---
 
-## Power BI Dashboard
+## 2️⃣ Time-of-Day Risk Distribution
 
-The Power BI dashboard contains the complete interactive analysis used in this project.
+![Accidents by Time of Day](images/accidents_by_time_of_day.png)
 
-- All KPIs, calculations, and visualizations are implemented in Power BI  
-- Static PNG images are included for quick preview and documentation on GitHub  
-- Every chart shown in the presentation is derived directly from the Power BI data model  
+- Afternoon accounts for ~41% of total accidents
+- Peak concentration around 15:00
+- Morning and evening show similar but lower volumes
+
+Risk concentration aligns strongly with commuting density patterns.
+
+---
+
+## 3️⃣ Weekday vs Weekend Volume
+
+![Weekday vs Weekend](images/weekday_vs_weekend.png)
+
+- ~79% of accidents occur on weekdays
+- Weekend volume significantly lower
+- Severity levels remain relatively stable across both segments
+
+Volume — not severity — is the primary weekday risk driver.
+
+---
+
+## 4️⃣ Weather Impact on Severity
+
+![Severity by Weather](images/severity_by_weather.png)
+
+- Slightly higher average severity in clear and overcast conditions
+- Rain and fog do not significantly increase severity scores
+- Indicates behavioral factors dominate environmental impact
+
+Weather is a secondary risk amplifier, not a primary driver.
+
+---
+
+## 5️⃣ High-Risk Locations
+
+![Top Accident Locations](images/top_accident_locations.png)
+
+- Major highways and arterial corridors dominate accident concentration
+- High-volume commuter routes show persistent risk clustering
+
+Intervention prioritization should focus on high-density corridors.
+
+---
+
+## Executive Dashboard
+
+![Dashboard Overview](images/dashboard_overview.png)
+
+The Power BI model consolidates:
+
+- Total accidents: 68.96K  
+- Average severity: 2.05  
+- Peak accident hour: 15:00  
+- Trend analysis  
+- Departmental segmentation  
+- Interactive filtering  
+
+The dashboard architecture separates KPI logic from visualization, enabling scalable monitoring.
 
 File:  
 `powerbi/la_traffic_accidents_dashboard.pbix`
 
 ---
 
-## Team & Contributions
+# Strategic Observations
 
-Datathon Team Project
-
-- Charalampos Sofianopoulos — Data Preparation & Feature Engineering  
-- Konstantinos Krasnostan — Exploratory Data Analysis & Power BI Dashboard  
-- Athina Kanellopoulou — Data Preparation & Data Storytelling  
-- Nikos Mallias — Statistical Analysis & Interpretation  
-
-All team members contributed to data validation, insight review, and final conclusions.
+- Traffic density and commuter behavior drive primary risk exposure.
+- Afternoon weekday periods represent the highest operational vulnerability.
+- Severity variance is relatively stable across time and weather conditions.
+- Risk mitigation should target volume concentration, not just severity spikes.
 
 ---
 
-## Data Source & Disclaimer
+# Data-Driven Recommendations
 
-This project was developed as part of the Big Blue Academy Datathon.
-
-Data source: Los Angeles Police Department (LAPD)
-
-The dataset was provided for educational and competition purposes.  
-Raw data files are not included to respect licensing and redistribution policies.
-
-All analysis and visualizations were created exclusively by the project team.
+- Target enforcement during 15:00–18:00 peak window.
+- Prioritize high-volume commuter corridors for intervention.
+- Maintain safety controls in clear-weather conditions.
+- Use longitudinal trend data for predictive traffic management planning.
 
 ---
 
-## Contact
+# Project Architecture
+
+```
+la-traffic-accidents-datathon/
+│
+├── powerbi/
+│   └── la_traffic_accidents_dashboard.pbix
+│
+├── images/
+│   ├── dashboard_overview.png
+│   ├── accidents_by_year.png
+│   ├── accidents_by_time_of_day.png
+│   ├── weekday_vs_weekend.png
+│   ├── severity_by_weather.png
+│   └── top_accident_locations.png
+│
+├── presentation/
+│   └── datathon_presentation.pdf
+│
+└── README.md
+```
+
+---
+
+# Technical Stack
+
+- Power BI (Data Modeling, DAX, Dashboard Architecture)
+- Excel (Initial data validation)
+- Structured analytical storytelling
+
+---
+
+## Role & Contribution
+
+Exploratory Data Analysis & Power BI Dashboard Design.
+
+Contributed to:
+
+- Data validation review
+- KPI definition
+- Insight framing
+- Final presentation synthesis
+
+---
+
+## Professional Positioning
+
+This project demonstrates:
+
+- Risk concentration analysis
+- Volume vs severity segmentation
+- Time-series structural interpretation
+- Executive-level dashboard delivery
+- Urban operations intelligence
+
+It reflects applied analytical reasoning in a public safety context — not isolated visualization.
+
+---
 
 Konstantinos Krasnostan  
-LinkedIn: https://www.linkedin.com/in/kon-kras/
+Data Analyst | Operational Intelligence & Business Analytics
+
+LinkedIn:  
+https://www.linkedin.com/in/kon-kras/
